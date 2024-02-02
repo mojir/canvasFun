@@ -1,0 +1,155 @@
+body {
+  font-size: 14px;
+  background-color: #000;
+  color: #ccc;
+  margin: 0;
+  overflow: hidden;
+}
+#panel {
+  font-family: monospace;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: rgba(0,0,0, 0.9);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  /* width: 600px; */
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #fff;
+  }
+
+
+  #button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    align-items: center;
+    button {
+      flex: 1;
+      width: 120px;
+    }
+  }
+
+  button, input {
+    background-color: #000;
+    color: #ccc;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  button:active {
+    background-color: #333;
+    color: #fff;
+  }
+
+  button:disabled {
+    background-color: #000;
+    color: #666;
+    border-color: #666;
+    cursor: default;
+  }
+
+  input {
+    padding: 5px 10px 3px 10px;
+  }
+  input:focus {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+
+  input {
+    font-size: 1rem;
+  }
+
+
+
+  .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .link {
+
+    text-align: center;
+    font-family: monospace;
+    margin: 1rem 0;
+
+  }
+
+  #seed-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    input {
+      flex: 1;
+      width: 100%;
+    }
+  }
+
+  .editable-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    .editable-field {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-family: monospace;
+      gap: 1rem;
+      .field-title {
+        pre {
+          display: inline-block;
+          margin: 0;
+        }
+        input {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+#seedInput {
+  width: 100%;
+}
+#debug-container {
+  overflow: auto;
+  height: 300px;
+}
+#seed-container {
+  margin-top: 1rem;
+}
+:fullscreen {
+  cursor: none;
+}
+#myCanvas:fullscreen {
+  right:0;
+  cursor: none;
+}

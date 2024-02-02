@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Fun</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <div id="panel">
+    <h3 id="title"></h3>
+    <div id="debug-container">
+      <pre id="debug"></pre>
+    </div>
+    <button onclick="Configuration.test()">TEST</button>
+    <div>
+      <button onclick="decFolds()">Decrement number of folds</button>
+      <button onclick="incFolds()">Increment number of folds</button>
+    </div>
+    <div>
+      <button onclick="decSpacing()">Decrement spacing</button>
+      <button onclick="incSpacing()">Increment spacing</button>
+    </div>
+    <div class="controls">
+      <button id="play" onclick="play()">Play</button>
+      <button id="pause" onclick="pause()">Pause / Step</button>
+      <button id="fullscreenButton" onclick="fullScreen()">Fullscreen</button>  </div>
+    </div>
+  </div>
+
+  <script src="./Utils.js"></script>
+  <script src="./Vector2.js"></script>
+  <script src="./InitialPolygons.js"></script>
+  <script src="./Configuration.js"></script>
+  <script src="./Panel.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
